@@ -1,0 +1,55 @@
+<head>
+  <title>Sending My Love</title>
+  <link rel="stylesheet" href="first.css">
+</head>
+
+<body>
+  <div class="wrap">
+      <h1>Love Letter</h1>
+      <div class="postcard">
+
+          <div class="letter">
+              <form action="#" method="post" class="message_form">
+                  <p class="push">Dear </p><input type="text" id="recipient" name="recipient_name" placeholder="Pavani" class="push"><p> ,</p><br>
+                  <label for="message">Message</label><br>
+                  <textarea id="message" name="message_to_recipient" placeholder="Ohh my beautipull lovvuuu I lovve youuu. My sweeetest idiott. My lovely devil. You are lucky to have me"></textarea><br>
+                  <p>Yours Lovingly, </p><br>
+                  <input type="text" id="sender_name" name="sender" placeholder="secret lover">
+              </form>
+          </div>
+
+          <div class="address">
+              <img src="https://wallpapercave.com/w/wp5120606.jpg" class="mail_stamp">
+              <form action="#" method="post" class="message_form">
+              </form>
+          </div>
+      </div>
+  </div>
+  <footer>
+      <p>Love from your not so Secret Lover</p>
+      <script>
+          const postcard = document.querySelector('.postcard');
+          const pushElements = document.querySelectorAll('.push');
+  
+          postcard.addEventListener('mouseover', () => {
+              postcard.style.transform = 'rotate(0deg) scale(1.1)';
+              postcard.style.boxShadow = '1em 1em 15px rgba(0, 0, 0, 0.3)';
+          });
+  
+          postcard.addEventListener('mouseout', () => {
+              postcard.style.transform = 'rotate(2.5deg) scale(1)';
+              postcard.style.boxShadow = '.8em .8em 15px rgba(0, 0, 0, 0.3)';
+          });
+  
+          pushElements.forEach(element => {
+              element.addEventListener('mouseover', () => {
+                  element.style.transform = 'scale(1.1)';
+              });
+  
+              element.addEventListener('mouseout', () => {
+                  element.style.transform = 'scale(1)';
+              });
+          });
+      </script
+  </footer>
+</body>
